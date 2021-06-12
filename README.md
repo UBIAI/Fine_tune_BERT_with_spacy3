@@ -4,13 +4,13 @@ This is the code to reproduce the results shown in tutorial: https://colab.resea
 
 First we convert the IOB file exported from the UBIAI annotation tool to spacy JSON:
 ```
-!python -m spacy convert drive/MyDrive/train_set_bert.tsv ./ -t json -n 1 -c iob
-!python -m spacy convert drive/MyDrive/dev_set_bert.tsv ./ -t json -n 1 -c iob
+!python -m spacy convert drive/MyDrive/train.tsv ./ -t json -n 1 -c iob
+!python -m spacy convert drive/MyDrive/test.tsv ./ -t json -n 1 -c iob
 ```
 After converting the training and dev files to JSON file, we need to convert them to spacy binary file:
 ```
-!python -m spacy convert drive/MyDrive/train_set_bert.json ./ -t spacy
-!python -m spacy convert drive/MyDrive/dev_set_bert.json ./ -t spacy
+!python -m spacy convert drive/MyDrive/train.json ./ -t spacy
+!python -m spacy convert drive/MyDrive/test.json ./ -t spacy
 ```
 Next we install spacy and transformer library pipeline:
 
