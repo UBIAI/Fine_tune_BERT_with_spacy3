@@ -1,6 +1,6 @@
 # Fine_tune_BERT_with_spacy3
 
-This is the code to reproduce the results shown in tutorial: https://colab.research.google.com/drive/1g9wV7Teg03BQuJ3t_8QHfuFbyTgUcoTK
+This is the code to reproduce the results shown in tutorial: https://towardsdatascience.com/how-to-fine-tune-bert-transformer-with-spacy-3-6a90bfe57647
 
 First we convert the IOB file exported from the UBIAI annotation tool to spacy JSON:
 ```
